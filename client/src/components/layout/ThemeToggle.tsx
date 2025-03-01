@@ -7,15 +7,23 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
   const { t } = useTranslation();
+  const [theme, setTheme] = useState<'light' | 'dark' | 'system'>(() => {
+    return (localStorage.getItem('theme') as 'light' | 'dark' | 'system') || 'system';
+  });
 
-  function setTheme(theme: 'light' | 'dark' | 'system') {
-    const doc = document.documentElement;
-    doc.setAttribute('data-theme', theme);
+  useEffect(() => {
+    const root = document.documentElement;
+    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+
+    root.classList.remove('light', 'dark');
+    root.classList.add(currentTheme);
     localStorage.setItem('theme', theme);
-  }
+  }, [theme]);
 
   return (
     <DropdownMenu>
