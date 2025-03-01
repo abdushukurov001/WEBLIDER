@@ -1,0 +1,190 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "home": {
+    "hero": {
+      "title": "We Create Digital Solutions for Your Business",
+      "subtitle": "Professional web development and digital marketing services to help your business grow and succeed in the digital world",
+      "cta": "Get Started",
+      "portfolio": "View Portfolio"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "We offer a wide range of digital services to meet your business needs"
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "subtitle": "Contact us today to discuss your project requirements and get a free consultation",
+      "button": "Contact Us"
+    }
+  },
+  "services": {
+    "web": {
+      "title": "Web Development",
+      "desc": "Custom websites and web applications built with modern technologies"
+    },
+    "app": {
+      "title": "Mobile Apps",
+      "desc": "Native and cross-platform mobile applications for iOS and Android"
+    },
+    "marketing": {
+      "title": "Digital Marketing",
+      "desc": "SEO, social media marketing, and digital advertising strategies"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "We are a team of passionate developers and designers creating digital solutions",
+    "mission": {
+      "title": "Our Mission",
+      "desc": "To help businesses succeed in the digital world by providing innovative and effective solutions"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "desc": "To become the leading digital agency in the region, known for quality and innovation"
+    },
+    "team": {
+      "title": "Our Team",
+      "member1": {
+        "name": "John Smith",
+        "role": "CEO & Founder"
+      },
+      "member2": {
+        "name": "Sarah Johnson",
+        "role": "Lead Developer"
+      },
+      "member3": {
+        "name": "Michael Brown",
+        "role": "Creative Director"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "subtitle": "Check out some of our recent projects and success stories",
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "design": "Design"
+    },
+    "viewProject": "View Project",
+    "projects": {
+      "1": {
+        "title": "E-commerce Platform",
+        "desc": "Custom online store with advanced features"
+      },
+      "2": {
+        "title": "Fitness App",
+        "desc": "Mobile app for workout tracking"
+      },
+      "3": {
+        "title": "Brand Identity",
+        "desc": "Complete brand design package"
+      },
+      "4": {
+        "title": "Real Estate Website",
+        "desc": "Property listing and management platform"
+      },
+      "5": {
+        "title": "Food Delivery App",
+        "desc": "Restaurant ordering system"
+      },
+      "6": {
+        "title": "Corporate Website",
+        "desc": "Modern business website design"
+      }
+    }
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "subtitle": "Choose the perfect plan for your business needs",
+    "popular": "Most Popular",
+    "perMonth": "/month",
+    "getStarted": "Get Started",
+    "basic": {
+      "name": "Basic",
+      "price": "$999",
+      "description": "Perfect for small businesses",
+      "features": {
+        "f1": "5 Pages Website",
+        "f2": "Mobile Responsive",
+        "f3": "Basic SEO Setup",
+        "f4": "Contact Form"
+      }
+    },
+    "professional": {
+      "name": "Professional",
+      "price": "$1,999",
+      "description": "Ideal for growing businesses",
+      "features": {
+        "f1": "10 Pages Website",
+        "f2": "Mobile Responsive",
+        "f3": "Advanced SEO Setup",
+        "f4": "Custom Forms",
+        "f5": "Analytics Integration"
+      }
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "$3,999",
+      "description": "For large organizations",
+      "features": {
+        "f1": "Unlimited Pages",
+        "f2": "Mobile Responsive",
+        "f3": "Advanced SEO Setup",
+        "f4": "Custom Features",
+        "f5": "E-commerce Integration",
+        "f6": "Priority Support"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us for your project requirements",
+    "address": {
+      "title": "Address",
+      "value": "123 Business Street, Tashkent, Uzbekistan"
+    },
+    "email": {
+      "title": "Email"
+    },
+    "phone": {
+      "title": "Phone"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "sending": "Sending...",
+      "submit": "Send Message"
+    },
+    "success": {
+      "title": "Message Sent",
+      "message": "Thank you for contacting us. We'll get back to you soon."
+    },
+    "error": {
+      "title": "Error",
+      "message": "Failed to send message. Please try again."
+    }
+  },
+  "footer": {
+    "description": "Professional web development and digital marketing services",
+    "navigation": "Navigation",
+    "contact": "Contact Info",
+    "social": "Follow Us",
+    "address": "123 Business Street, Tashkent",
+    "rights": "All rights reserved."
+  }
+}

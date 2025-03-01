@@ -1,0 +1,190 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "portfolio": "Portfolio",
+    "pricing": "Narxlar",
+    "contact": "Bog'lanish"
+  },
+  "theme": {
+    "toggle": "Mavzuni o'zgartirish",
+    "light": "Yorug'",
+    "dark": "Qorong'u",
+    "system": "Tizim"
+  },
+  "home": {
+    "hero": {
+      "title": "Biznesingiz uchun raqamli yechimlar yaratamiz",
+      "subtitle": "Professional veb-sayt yaratish va raqamli marketing xizmatlari orqali biznesingizni rivojlantiring",
+      "cta": "Boshlash",
+      "portfolio": "Portfolio ko'rish"
+    },
+    "services": {
+      "title": "Bizning xizmatlar",
+      "subtitle": "Biznesingiz ehtiyojlari uchun keng ko'lamli raqamli xizmatlarni taqdim etamiz"
+    },
+    "cta": {
+      "title": "Loyihangizni boshlashga tayyormisiz?",
+      "subtitle": "Loyiha talablarini muhokama qilish va bepul maslahat olish uchun biz bilan bog'laning",
+      "button": "Bog'lanish"
+    }
+  },
+  "services": {
+    "web": {
+      "title": "Veb-sayt yaratish",
+      "desc": "Zamonaviy texnologiyalar bilan yaratilgan maxsus veb-saytlar"
+    },
+    "app": {
+      "title": "Mobil ilovalar",
+      "desc": "iOS va Android uchun nativ va krossplatforma ilovalar"
+    },
+    "marketing": {
+      "title": "Raqamli marketing",
+      "desc": "SEO, ijtimoiy tarmoqlar marketingi va raqamli reklama"
+    }
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "subtitle": "Biz raqamli yechimlar yaratuvchi ishtiyoqli dasturchilar va dizaynerlar jamoasimiz",
+    "mission": {
+      "title": "Bizning maqsadimiz",
+      "desc": "Innovatsion va samarali yechimlar taqdim etish orqali bizneslarning raqamli dunyoda muvaffaqiyatga erishishiga yordam berish"
+    },
+    "vision": {
+      "title": "Bizning ko'rinishimiz",
+      "desc": "Mintaqada sifat va innovatsiyalar bilan tanilgan yetakchi raqamli agentlikka aylanish"
+    },
+    "team": {
+      "title": "Bizning jamoa",
+      "member1": {
+        "name": "Jon Smit",
+        "role": "CEO va asoschisi"
+      },
+      "member2": {
+        "name": "Sara Jonson",
+        "role": "Yetakchi dasturchi"
+      },
+      "member3": {
+        "name": "Maykl Braun",
+        "role": "Kreativ direktor"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Bizning portfolio",
+    "subtitle": "So'nggi loyihalarimiz va muvaffaqiyat hikoyalarimiz bilan tanishing",
+    "filters": {
+      "all": "Hammasi",
+      "web": "Veb",
+      "mobile": "Mobil",
+      "design": "Dizayn"
+    },
+    "viewProject": "Loyihani ko'rish",
+    "projects": {
+      "1": {
+        "title": "E-tijorat platformasi",
+        "desc": "Kengaytirilgan funksiyali onlayn do'kon"
+      },
+      "2": {
+        "title": "Fitnes ilova",
+        "desc": "Mashg'ulotlarni kuzatish uchun mobil ilova"
+      },
+      "3": {
+        "title": "Brend identifikatsiyasi",
+        "desc": "To'liq brend dizayn paketi"
+      },
+      "4": {
+        "title": "Ko'chmas mulk sayti",
+        "desc": "Ko'chmas mulk ro'yxati platformasi"
+      },
+      "5": {
+        "title": "Yetkazib berish ilovasi",
+        "desc": "Restoran buyurtma tizimi"
+      },
+      "6": {
+        "title": "Korporativ sayt",
+        "desc": "Zamonaviy biznes sayti dizayni"
+      }
+    }
+  },
+  "pricing": {
+    "title": "Narxlar",
+    "subtitle": "Biznesingiz ehtiyojlari uchun mukammal rejani tanlang",
+    "popular": "Eng mashhur",
+    "perMonth": "/oy",
+    "getStarted": "Boshlash",
+    "basic": {
+      "name": "Boshlang'ich",
+      "price": "999$",
+      "description": "Kichik biznes uchun ideal",
+      "features": {
+        "f1": "5 sahifali veb-sayt",
+        "f2": "Mobil moslashuvchan",
+        "f3": "Asosiy SEO sozlash",
+        "f4": "Aloqa formasi"
+      }
+    },
+    "professional": {
+      "name": "Professional",
+      "price": "1,999$",
+      "description": "O'sib borayotgan biznes uchun",
+      "features": {
+        "f1": "10 sahifali veb-sayt",
+        "f2": "Mobil moslashuvchan",
+        "f3": "Kengaytirilgan SEO sozlash",
+        "f4": "Maxsus formalar",
+        "f5": "Analitika integratsiyasi"
+      }
+    },
+    "enterprise": {
+      "name": "Korporativ",
+      "price": "3,999$",
+      "description": "Yirik tashkilotlar uchun",
+      "features": {
+        "f1": "Cheksiz sahifalar",
+        "f2": "Mobil moslashuvchan",
+        "f3": "Kengaytirilgan SEO sozlash",
+        "f4": "Maxsus funksiyalar",
+        "f5": "E-tijorat integratsiyasi",
+        "f6": "Ustuvor qo'llab-quvvatlash"
+      }
+    }
+  },
+  "contact": {
+    "title": "Bog'lanish",
+    "subtitle": "Loyihangiz talablari uchun biz bilan bog'laning",
+    "address": {
+      "title": "Manzil",
+      "value": "Biznes ko'chasi, 123, Toshkent, O'zbekiston"
+    },
+    "email": {
+      "title": "Email"
+    },
+    "phone": {
+      "title": "Telefon"
+    },
+    "form": {
+      "name": "Ism",
+      "email": "Email",
+      "message": "Xabar",
+      "sending": "Yuborilmoqda...",
+      "submit": "Xabar yuborish"
+    },
+    "success": {
+      "title": "Xabar yuborildi",
+      "message": "Murojaat uchun rahmat. Tez orada siz bilan bog'lanamiz."
+    },
+    "error": {
+      "title": "Xatolik",
+      "message": "Xabar yuborilmadi. Iltimos, qayta urinib ko'ring."
+    }
+  },
+  "footer": {
+    "description": "Professional veb-sayt yaratish va raqamli marketing xizmatlari",
+    "navigation": "Navigatsiya",
+    "contact": "Aloqa ma'lumotlari",
+    "social": "Ijtimoiy tarmoqlar",
+    "address": "Biznes ko'chasi, 123, Toshkent",
+    "rights": "Barcha huquqlar himoyalangan."
+  }
+}
