@@ -3,13 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, Code, Globe, Zap } from "lucide-react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -20,66 +14,10 @@ export default function Home() {
     transition: { duration: 0.6 }
   };
 
-  const heroSlides = [
-    {
-      title: t("home.hero.title"),
-      subtitle: t("home.hero.subtitle"),
-      image: "bg-gradient-to-r from-purple-600 to-blue-500"
-    },
-    {
-      title: t("home.hero.slide2.title"),
-      subtitle: t("home.hero.slide2.subtitle"),
-      image: "bg-gradient-to-r from-pink-500 to-orange-500"
-    },
-    {
-      title: t("home.hero.slide3.title"),
-      subtitle: t("home.hero.slide3.subtitle"),
-      image: "bg-gradient-to-r from-green-500 to-teal-500"
-    }
-  ];
 
   return (
     <div>
-      {/* Hero Section with Carousel */}
-      <section className="min-h-screen relative overflow-hidden">
-        <Carousel className="w-full h-screen">
-          <CarouselContent>
-            {heroSlides.map((slide, index) => (
-              <CarouselItem key={index}>
-                <div className={`h-screen w-full ${slide.image} flex items-center justify-center`}>
-                  <div className="container mx-auto px-4">
-                    <motion.div 
-                      className="max-w-3xl mx-auto text-center text-white"
-                      initial={fadeIn.initial}
-                      animate={fadeIn.animate}
-                      transition={fadeIn.transition}
-                    >
-                      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-                        {slide.title}
-                      </h1>
-                      <p className="text-xl md:text-2xl mb-8 opacity-90">
-                        {slide.subtitle}
-                      </p>
-                      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button size="lg" className="w-full sm:w-auto" asChild>
-                          <Link href="/contact">{t("home.hero.cta")}</Link>
-                        </Button>
-                        <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
-                          <Link href="/portfolio">{t("home.hero.portfolio")}</Link>
-                        </Button>
-                      </div>
-                    </motion.div>
-                  </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-      </section>
-
-      {/* Services Section */}
+      <Hero/>
       <section className="py-20 bg-muted/50">
         <div className="container px-4">
           <motion.div 
