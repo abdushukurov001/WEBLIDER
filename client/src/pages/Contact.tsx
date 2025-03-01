@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -57,6 +58,24 @@ export default function Contact() {
     transition: { duration: 0.6 }
   };
 
+  const contactInfo = [
+    {
+      icon: MapPin,
+      title: "contact.address.title",
+      value: "contact.address.value"
+    },
+    {
+      icon: Mail,
+      title: "contact.email.title",
+      value: "info@webagency.com"
+    },
+    {
+      icon: Phone,
+      title: "contact.phone.title",
+      value: "+998 90 123 45 67"
+    }
+  ];
+
   return (
     <div className="pt-24">
       <div className="container">
@@ -65,23 +84,29 @@ export default function Contact() {
             initial={fadeIn.initial}
             animate={fadeIn.animate}
             transition={fadeIn.transition}
+            className="space-y-8"
           >
-            <h1 className="text-4xl font-bold mb-6">{t("contact.title")}</h1>
-            <p className="text-xl text-muted-foreground mb-8">{t("contact.subtitle")}</p>
+            <div>
+              <h1 className="text-4xl font-bold mb-6">{t("contact.title")}</h1>
+              <p className="text-xl text-muted-foreground">{t("contact.subtitle")}</p>
+            </div>
 
-            <div className="space-y-6">
-              <div>
-                <h3 className="font-semibold mb-2">{t("contact.address.title")}</h3>
-                <p className="text-muted-foreground">{t("contact.address.value")}</p>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2">{t("contact.email.title")}</h3>
-                <p className="text-muted-foreground">info@webagency.com</p>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2">{t("contact.phone.title")}</h3>
-                <p className="text-muted-foreground">+998 90 123 45 67</p>
-              </div>
+            <div className="grid gap-8">
+              {contactInfo.map((info, index) => (
+                <motion.div
+                  key={index}
+                  className="flex items-start gap-4 p-6 rounded-xl bg-card hover:shadow-lg transition-all duration-300"
+                  initial={fadeIn.initial}
+                  animate={fadeIn.animate}
+                  transition={{ ...fadeIn.transition, delay: index * 0.2 }}
+                >
+                  <info.icon className="h-6 w-6 text-primary flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold mb-2">{t(info.title)}</h3>
+                    <p className="text-muted-foreground">{t(info.value)}</p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
 
@@ -89,6 +114,7 @@ export default function Contact() {
             initial={fadeIn.initial}
             animate={fadeIn.animate}
             transition={{ ...fadeIn.transition, delay: 0.2 }}
+            className="bg-card p-8 rounded-xl shadow-lg"
           >
             <Form {...form}>
               <form onSubmit={form.handleSubmit((data) => mutation.mutate(data))} className="space-y-6">
@@ -99,7 +125,7 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>{t("contact.form.name")}</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input className="bg-background" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -113,7 +139,7 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>{t("contact.form.email")}</FormLabel>
                       <FormControl>
-                        <Input type="email" {...field} />
+                        <Input type="email" className="bg-background" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -127,14 +153,19 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>{t("contact.form.message")}</FormLabel>
                       <FormControl>
-                        <Textarea {...field} />
+                        <Textarea className="bg-background min-h-[150px]" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
 
-                <Button type="submit" disabled={mutation.isPending}>
+                <Button 
+                  type="submit" 
+                  disabled={mutation.isPending}
+                  className="w-full"
+                  size="lg"
+                >
                   {mutation.isPending ? t("contact.form.sending") : t("contact.form.submit")}
                 </Button>
               </form>
